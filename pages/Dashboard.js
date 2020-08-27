@@ -2,9 +2,7 @@ const { I } = inject();
 
 module.exports = {
 
-locators: {
-    
-}
+    formAuthButton: 'a[href*="/login"]',     
 
 
 

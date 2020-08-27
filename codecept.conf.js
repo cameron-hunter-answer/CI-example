@@ -10,8 +10,8 @@ exports.config = {
   helpers: {
     Playwright: {
       url: 'https://the-internet.herokuapp.com',
-      show: false,
-      browser: 'chromium'
+      show: true,
+      browser: 'chromium',
     },
     ResembleHelper : {
       require: "codeceptjs-resemblehelper",
@@ -21,7 +21,10 @@ exports.config = {
     },
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    LoginPage: "./pages/Login.js",
+    Dashboard: "./pages/Dashboard.js",
+
   },
   bootstrap: null,
   mocha: {},
@@ -29,7 +32,7 @@ exports.config = {
   plugins: {    
     allure: {},  
     retryFailedStep: {
-      enabled: true
+      enabled: false
     },
     screenshotOnFail: {
       enabled: true
