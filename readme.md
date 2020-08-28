@@ -2,7 +2,7 @@
 
 This template is designed to give AD Testers a head start in writing a CodeceptJS framework. It also includes a login test to demonstrate the intended usage of the framework.  
 
-It comes with plugins packages and configurations as follows:  
+It comes with plugins, packages and configurations as follows:  
 - Playwright
 - resemblejs (screenshot comparison tool)
 - Allure reporting
