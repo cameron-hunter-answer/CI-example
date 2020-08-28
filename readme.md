@@ -29,7 +29,7 @@ It comes with plugins, packages and configurations as follows:
 ##### Tips and tricks
 - Test file names need to be appended with `_test`
 - To debug, either create a debug terminal and use breakpoints, or run with command `npx codeceptjs run -p pauseOnFail` or put a line of code `pause();` where you want the interactive shell to start. See documentation on the interactive shell. https://codecept.io/basics/#debug
-- In codecept.conf.js, the "show" option toggles headless mode
+- In `codecept.conf.js`, the "show" option toggles headless mode
 - To add page objects to the project, add their path in codecept.conf.js under "include"
 - To create custom helpers to append to the "I" object, they go in `steps_file.js` https://codecept.io/best/#refactoring-and-pageobjects
 - To create custom helpers based on code other than the I object (webdriver/puppeteer/etc), see the documentation https://codecept.io/helpers/
