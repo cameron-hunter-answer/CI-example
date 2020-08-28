@@ -1,5 +1,6 @@
 const { setHeadlessWhen } = require('@codeceptjs/configure');
 
+
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
@@ -31,6 +32,7 @@ exports.config = {
   name: 'codeceptjs_playwright_template',
   plugins: {    
     allure: {},  
+    pauseOnFail: {},
     retryFailedStep: {
       enabled: false
     },

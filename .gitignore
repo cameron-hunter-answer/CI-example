@@ -1,5 +1,6 @@
 # CodeceptJS
 output/
+tests/
 
 # Logs
 logs
