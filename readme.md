@@ -18,22 +18,22 @@ It comes with plugins, packages and configurations as follows:
 - two important files to understand the project are codecept.conf.js and login_test.js, so have a look around and read the rest of this readme
 
 ##### Some useful commands to get you started:  
-- "npx codeceptjs run" to run all tests
-- "npx codeceptjs run --verbose" to run tests with logging
-- "npx codeceptjs run -p pauseOnFail" to run tests and pause at a failure (ie show the interactive terminal) useful for debugging
-- "npx codeceptjs run --plugins allure" to run with allure reporting
-- "allure serve output" to see the report (historic reports end up in the output folder, not sure how to use them because they are xml)
+- `npx codeceptjs run` to run all tests
+- `npx codeceptjs run --verbose` to run tests with logging
+- `npx codeceptjs run -p pauseOnFail` to run tests and pause at a failure (ie show the interactive terminal) useful for debugging
+- `npx codeceptjs run --plugins allure` to run with allure reporting
+- `allure serve output` to see the report (historic reports end up in the output folder, not sure how to use them because they are xml)
 - See the documentation for more https://codecept.io/commands/#commands
 
 
 ##### Tips and tricks
-- Test file names need to be appended with _test
-- To debug, either create a debug terminal and use breakpoints, or run with command "npx codeceptjs run -p pauseOnFail" or put a line of code "pause();" where you want the interactive shell to start. See documentation on the interactive shell. https://codecept.io/basics/#debug
+- Test file names need to be appended with `_test`
+- To debug, either create a debug terminal and use breakpoints, or run with command `npx codeceptjs run -p pauseOnFail` or put a line of code `pause();` where you want the interactive shell to start. See documentation on the interactive shell. https://codecept.io/basics/#debug
 - In codecept.conf.js, the "show" option toggles headless mode
 - To add page objects to the project, add their path in codecept.conf.js under "include"
-- To create custom helpers to append to the "I" object, they go in steps_file.js https://codecept.io/best/#refactoring-and-pageobjects
+- To create custom helpers to append to the "I" object, they go in `steps_file.js` https://codecept.io/best/#refactoring-and-pageobjects
 - To create custom helpers based on code other than the I object (webdriver/puppeteer/etc), see the documentation https://codecept.io/helpers/
-- Put your expected screenshot for screenshot comparison in ./tests/screenshots/base  , the tests will output screenshots to ./output and the visual comparison will end up in ./tests/screenshots/diff
+- Put your expected screenshot for screenshot comparison in `./tests/screenshots/base`  , the tests will output screenshots to `./output` and the visual comparison will end up in `./tests/screenshots/diff`
 
 ##### Limitations and recommendations:  
 - The I.grab method (for getting data from the page to manipulate) needs to be in an async function with an await, see the documentation for how this works https://codecept.io/basics/#grabbing
