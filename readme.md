@@ -2,13 +2,8 @@
 
 This template is designed to give AD Testers a head start in writing a CodeceptJS framework. It also includes a login test to demonstrate the intended usage of the framework.  
 
-<<<<<<< HEAD
 It comes with plugins packages and configurations as follows:  
 - Playwright, WebDriver, Protractor (Playwright is the default)
-=======
-It comes with plugins, packages and configurations as follows:  
-- Playwright
->>>>>>> 4de89da2f315bd4eadb367836b8fb1c855ba4df3
 - resemblejs (screenshot comparison tool)
 - Allure reporting
 - Pause On Fail
