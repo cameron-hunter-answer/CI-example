@@ -5,7 +5,7 @@ Feature('login');
 
 Scenario('test something', (I, LoginPage, Dashboard) => {
 
-    //in --verbose this will print out the value from appconfig.js to prove the project variable config is working
+    //in --verbose this will print out the value from appconfig.js to show it works
     I.say(appconfig.testConfig, 'red');
 
     I.amOnPage('/')

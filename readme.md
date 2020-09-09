@@ -24,7 +24,7 @@ It comes with plugins packages and configurations as follows:
 - `npx codeceptjs run -c ./config/protractorConfig.js` to run using the Protractor library and config file (this works with no other code changes)
 - `npx codeceptjs run -p pauseOnFail` to run tests and pause at a failure (ie show the interactive terminal) for debugging
 - `npx codeceptjs run --plugins allure` to run with allure reporting
-- `allure serve output` to see the report (historic reports end up in the output folder, not sure how to use them because they are xml)
+- `allure serve output` to see the report (historic reports are saved to the output folder in xml format)
 - See the documentation for more https://codecept.io/commands/#commands
 
 

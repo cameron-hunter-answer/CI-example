@@ -32,6 +32,7 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   name: 'codeceptjs_playwright_template',
+  require: ["ts-node/register"],
   plugins: {    
     allure: {},  
     pauseOnFail: {},
