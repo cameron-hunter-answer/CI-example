@@ -3,7 +3,7 @@ const { appconfig } = require("../appconfig");
 
 Feature('login');
 
-Scenario('test something', (I, LoginPage, Dashboard) => {
+Scenario('log in with correct details', (I, LoginPage, Dashboard) => {
 
     //in --verbose this will print out the value from appconfig.js to show it works
     I.say(appconfig.testConfig, 'red');
