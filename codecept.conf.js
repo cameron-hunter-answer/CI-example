@@ -7,12 +7,12 @@ const { appconfig } = require("./appconfig");
 // setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/*.js',
   output: './output',
   helpers: {
     Playwright: {
       url: appconfig.url,
-      show: true,
+      show: false,
       windowSize: appconfig.windowSize,
       browser: 'chromium',
     },

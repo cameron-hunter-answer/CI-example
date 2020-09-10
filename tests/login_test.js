@@ -1,4 +1,4 @@
-const { appconfig } = require("./appconfig");
+const { appconfig } = require("../appconfig");
 
 
 Feature('login');
