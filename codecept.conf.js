@@ -10,6 +10,9 @@ exports.config = {
   tests: './tests/*.js',
   output: './output',
   helpers: {
+    Percy: {
+      require: './percy_helper.js',
+    },
     Playwright: {
       url: appconfig.url,
       show: false,

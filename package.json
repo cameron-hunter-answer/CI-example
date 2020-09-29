@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@codeceptjs/mailslurp-helper": "^1.0.2",
+    "@percy/protractor": "^1.1.0",
     "@wdio/selenium-standalone-service": "^6.4.0",
     "cross-env": "^7.0.2"
   },
