@@ -9,10 +9,10 @@ const { appconfig } = require("./appconfig");
 exports.config = {
   tests: './tests/*.js',
   output: './output',
-  helpers: {
+  helpers: {   
     Playwright: {
       url: appconfig.url,
-      show: false,
+      show: true,
       windowSize: appconfig.windowSize,
       browser: 'chromium',
     },
@@ -21,6 +21,10 @@ exports.config = {
       screenshotFolder : "./tests/output/",
       baseFolder: "./tests/screenshots/base/",
       diffFolder: "./tests/screenshots/diff/"
+    },
+    MailSlurp: {
+      require: '@codeceptjs/mailslurp-helper',
+      apiKey: 'a7c1abe6286f7b6bfd75d6bb018de8b9a5e928c03a9385fa2bdd28a423b990a6'
     },
   },
   include: {
