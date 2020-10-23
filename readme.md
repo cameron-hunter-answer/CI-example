@@ -15,6 +15,8 @@ It comes with plugins packages and configurations as follows:
 - Clone or download this repo to a folder by using git bash in that folder `git clone https://github.com/Answer-Digital-Test-Team/codeceptjs_playwright_template.git`
 - Open that folder in an IDE or code editor
 - Open a terminal in that folder location
+- run the command `npm install` to install all the dependencies
+- If you get a typescript error, run `npm install -g typescript` and then `npm link typescript`
 
 ##### Some useful terminal commands to get you started:  
 - `npx codeceptjs run` to run all tests

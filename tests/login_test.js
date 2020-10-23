@@ -14,10 +14,7 @@ Scenario('log in with correct details', (I, LoginPage, Dashboard) => {
     I.fillField(LoginPage.passwordField,'SuperSecretPassword!')
     I.click(LoginPage.loginButton)
     I.see(LoginPage.successText, LoginPage.successElement)
-
-    I.takePercySnapshot('test Snapshot')
-    //Currently not taking a screenshot even though the method runs
-
+    
     I.saveScreenshot("Login_Screenshot_Image.png");
     I.seeVisualDiff("Login_Screenshot_Image.png", {tolerance: 1, prepareBaseImage: false});    
 
