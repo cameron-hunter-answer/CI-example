@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@codeceptjs/configure": "^0.5.2",
-    "codeceptjs": "^2.6.10",
+    "codeceptjs": "^3.4.1",
     "codeceptjs-resemblehelper": "^1.9.2",
     "mailslurp-client": "^8.7.8",
     "playwright": "^1.3.0",
